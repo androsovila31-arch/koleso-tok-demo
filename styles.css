@@ -436,6 +436,7 @@ h1 {
   grid-template-columns: 124px minmax(0, 1fr) 124px;
   gap: 18px;
   align-items: start;
+  margin-top: -38px;
 }
 
 .hero-floating {
@@ -991,6 +992,10 @@ h2 {
   .price-layout,
   .ask-card {
     grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    margin-top: 0;
   }
 
   .hero-workshop-head h2,
