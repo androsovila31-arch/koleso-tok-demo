@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Колесо &amp; Ток — демонстрационный сайт по ремонту велосипедов и электросамокатов</title>
+    <title>Колесо &amp; Ток — учебный демонстрационный сайт по ремонту велосипедов и электросамокатов</title>
     <meta
       name="description"
-      content="Демонстрационный сайт мастерской: ремонт велосипедов и электросамокатов в Санкт-Петербурге. Диагностика, настройка, замена деталей и сезонное обслуживание."
+      content="Учебный демонстрационный сайт частного мастера: ремонт велосипедов и электросамокатов, диагностика, настройка, замена деталей и сезонное обслуживание."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -40,47 +40,93 @@
 
     <main id="top">
       <section class="hero section">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="hero-orb hero-orb-left"></span>
+          <span class="hero-orb hero-orb-right"></span>
+          <span class="hero-grid-lines"></span>
+          <span class="hero-route"></span>
+          <span class="hero-wheel-decor"></span>
+          <span class="hero-bolt-decor"></span>
+          <span class="hero-tool-decor"></span>
+        </div>
+
         <div class="container hero-grid">
           <div class="hero-copy">
+            <div class="hero-badges" aria-label="Преимущества">
+              <span>Частный мастер</span>
+              <span>Рядом с метро</span>
+              <span>Согласование цены до ремонта</span>
+            </div>
+
             <h1>Ремонт велосипедов и электросамокатов в Санкт-Петербурге</h1>
             <p class="hero-text">
-              Диагностика, настройка, замена деталей и срочный ремонт в демонстрационном формате.
+              Диагностика, настройка, замена деталей и спокойный ремонт без лишней суеты.
             </p>
+            <p class="hero-note">Работаю сам и лично отвечаю за каждый ремонт.</p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="https://t.me/koleso_tok_demo" target="_blank" rel="noreferrer">
-                Записаться в Telegram
-              </a>
+              <a class="button button-primary" href="#contacts">Написать по демонстрационным контактам</a>
               <a class="button button-secondary" href="#prices">Посмотреть цены</a>
             </div>
 
             <ul class="hero-points">
               <li>Частный мастер, который лично отвечает за результат</li>
               <li>Больше 6 лет практики без потокового сервиса</li>
-              <li>Стоимость согласовывается до начала ремонта</li>
+              <li>Можно заранее обсудить проблему по фото и описанию</li>
             </ul>
           </div>
 
-          <div class="hero-panel" aria-hidden="true">
-            <div class="hero-illustration">
-              <div class="wheel wheel-left"></div>
-              <div class="wheel wheel-right"></div>
-              <div class="frame-line frame-top"></div>
-              <div class="frame-line frame-middle"></div>
-              <div class="frame-line frame-bottom"></div>
-              <div class="frame-line scooter-stem"></div>
-              <div class="frame-line scooter-deck"></div>
-              <div class="frame-line spark-line"></div>
+          <div class="hero-panel">
+            <div class="hero-floating hero-floating-left">
+              <article class="floating-card">
+                <strong>Диагностика от 500 ₽</strong>
+                <span>Без лишних работ в счёте</span>
+              </article>
+              <article class="floating-card">
+                <strong>Срочный ремонт</strong>
+                <span>Если поломка не терпит до выходных</span>
+              </article>
             </div>
-            <div class="hero-card">
-              <span>Ежедневно</span>
-              <strong>11:00 — 20:00</strong>
-              <p>Санкт-Петербург, демонстрационный адрес</p>
+
+            <div class="hero-workshop">
+              <div class="hero-workshop-head">
+                <span class="hero-kicker">Мастерская рядом с вами</span>
+                <h2>Аккуратный приём, понятные этапы и связь напрямую</h2>
+              </div>
+
+              <div class="hero-illustration" aria-hidden="true">
+                <div class="wheel wheel-left"></div>
+                <div class="wheel wheel-right"></div>
+                <div class="frame-line frame-top"></div>
+                <div class="frame-line frame-middle"></div>
+                <div class="frame-line frame-bottom"></div>
+                <div class="frame-line scooter-stem"></div>
+                <div class="frame-line scooter-deck"></div>
+                <div class="frame-line spark-line"></div>
+                <div class="mini-route"></div>
+                <div class="mini-dot mini-dot-left"></div>
+                <div class="mini-dot mini-dot-right"></div>
+              </div>
+
+              <div class="hero-stats">
+                <article class="hero-card">
+                  <span>Формат работы</span>
+                  <strong>Частный мастер без очередей на приёмке</strong>
+                  <p>Сначала диагностика, потом согласование стоимости и только затем ремонт.</p>
+                </article>
+                <article class="hero-card">
+                  <span>Что удобно</span>
+                  <strong>Можно прислать фото поломки</strong>
+                  <p>Если проблема понятна заранее, быстрее обсуждаем сроки и примерный объём работ.</p>
+                </article>
+              </div>
             </div>
-            <div class="hero-card">
-              <span>Быстрая связь</span>
-              <strong>Telegram / WhatsApp</strong>
-              <p>Можно сразу прислать фото и описание проблемы</p>
+
+            <div class="hero-floating hero-floating-right">
+              <article class="floating-card accent">
+                <strong>Можно прислать фото поломки</strong>
+                <span>И сначала просто уточнить, что с техникой</span>
+              </article>
             </div>
           </div>
         </div>
@@ -92,12 +138,17 @@
             <p class="eyebrow">О мастерской</p>
             <h2>Спокойный ремонт без лишних обещаний</h2>
           </div>
-          <div class="about-card">
-            <p>
-              Демонстрационный мастер Алексей работает в этом макете как пример частной мастерской.
-              Здесь показана типовая подача услуг: больше 6 лет опыта, согласование стоимости заранее
-              и аккуратный подход к ремонту.
-            </p>
+          <div class="about-layout">
+            <div class="about-card">
+              <p>
+                Демонстрационный мастер Алексей работает в этом макете как пример частной мастерской. Здесь показана типовая подача услуг: больше 6 лет опыта, согласование стоимости заранее и аккуратный подход к ремонту.
+              </p>
+            </div>
+            <div class="about-side-card">
+              <span>Учебный формат</span>
+              <strong>Все контакты, адрес и отзывы на сайте демонстрационные</strong>
+              <p>Эта пометка сохранена специально: проект показывает подачу услуги, а не страницу реальной компании.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -108,8 +159,7 @@
             <p class="eyebrow">Демонстрационные изображения</p>
             <h2>Места под будущие фотографии клиента</h2>
             <p class="section-note">
-              На сайте используются локальные заглушки только для демонстрации учебного проекта. Их
-              можно заменить на реальные фотографии клиента позже.
+              На сайте используются локальные заглушки только для демонстрации учебного проекта. Их можно заменить на реальные фотографии клиента позже.
             </p>
           </div>
 
@@ -177,6 +227,31 @@
         </div>
       </section>
 
+      <section class="section" id="ask-first">
+        <div class="container">
+          <div class="ask-card">
+            <div class="ask-copy">
+              <p class="eyebrow">Можно сначала просто спросить</p>
+              <h2>Не уверены, стоит ли ремонтировать?</h2>
+              <p>
+                Пришлите фото или короткое описание поломки, и можно спокойно понять, есть ли смысл в ремонте, с чего начать и на что ориентироваться по стоимости.
+              </p>
+            </div>
+            <div class="ask-points">
+              <div class="ask-item">
+                <strong>Без обязательств</strong>
+                <span>Сначала вопрос, потом решение</span>
+              </div>
+              <div class="ask-item">
+                <strong>Удобно по фото</strong>
+                <span>Можно показать проблему без долгих объяснений</span>
+              </div>
+              <a class="button button-secondary" href="#contacts">Открыть демонстрационные контакты</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-soft" id="prices">
         <div class="container">
           <div class="section-heading">
@@ -184,25 +259,28 @@
             <h2>Примерная стоимость работ</h2>
           </div>
 
-          <div class="price-list" role="list">
-            <div class="price-row" role="listitem"><span>Диагностика велосипеда</span><strong>от 500 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Диагностика электросамоката</span><strong>от 700 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Настройка тормозов</span><strong>от 600 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Настройка переключателей</span><strong>от 700 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Замена камеры велосипеда</span><strong>от 500 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Замена камеры электросамоката</span><strong>от 1 200 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Замена покрышки велосипеда</span><strong>от 700 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Замена покрышки электросамоката</span><strong>от 1 500 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Сборка велосипеда из коробки</span><strong>от 2 000 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Полное ТО велосипеда</span><strong>от 3 500 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Полное ТО электросамоката</span><strong>от 4 500 ₽</strong></div>
-            <div class="price-row" role="listitem"><span>Выезд мастера</span><strong>от 1 000 ₽</strong></div>
-          </div>
+          <div class="price-layout">
+            <div class="price-list" role="list">
+              <div class="price-row" role="listitem"><span>Диагностика велосипеда</span><strong>от 500 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Диагностика электросамоката</span><strong>от 700 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Настройка тормозов</span><strong>от 600 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Настройка переключателей</span><strong>от 700 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Замена камеры велосипеда</span><strong>от 500 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Замена камеры электросамоката</span><strong>от 1 200 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Замена покрышки велосипеда</span><strong>от 700 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Замена покрышки электросамоката</span><strong>от 1 500 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Сборка велосипеда из коробки</span><strong>от 2 000 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Полное ТО велосипеда</span><strong>от 3 500 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Полное ТО электросамоката</span><strong>от 4 500 ₽</strong></div>
+              <div class="price-row" role="listitem"><span>Выезд мастера</span><strong>от 1 000 ₽</strong></div>
+            </div>
 
-          <p class="price-note">
-            Итоговая стоимость зависит от модели, состояния техники и стоимости запчастей. Перед
-            ремонтом я всегда согласовываю цену с клиентом.
-          </p>
+            <aside class="price-side-card">
+              <span>До начала ремонта</span>
+              <strong>Сначала обсуждаем объём работ и стоимость</strong>
+              <p>Итоговая цена зависит от модели, состояния техники и стоимости запчастей. Перед ремонтом всё согласовывается заранее.</p>
+            </aside>
+          </div>
         </div>
       </section>
 
@@ -216,19 +294,19 @@
           <div class="steps-grid">
             <article class="step-card">
               <span>01</span>
-              <p>Вы пишете мне и коротко описываете проблему.</p>
+              <p>Вы пишете и коротко описываете проблему или присылаете фото.</p>
             </article>
             <article class="step-card">
               <span>02</span>
-              <p>Я называю примерную стоимость и что стоит проверить.</p>
+              <p>Я называю примерную стоимость и что стоит проверить до визита.</p>
             </article>
             <article class="step-card">
               <span>03</span>
-              <p>Вы привозите технику или мы договариваемся о выезде.</p>
+              <p>Вы привозите технику или мы обсуждаем демонстрационный выездной формат.</p>
             </article>
             <article class="step-card">
               <span>04</span>
-              <p>Я делаю ремонт и отдаю технику в рабочем состоянии.</p>
+              <p>После согласования выполняю ремонт и отдаю технику в рабочем состоянии.</p>
             </article>
           </div>
         </div>
@@ -239,31 +317,22 @@
           <div class="section-heading">
             <p class="eyebrow">Отзывы</p>
             <h2>Что говорят клиенты</h2>
-            <p class="section-note">Отзывы приведены для демонстрации структуры сайта.</p>
+            <p class="section-note">Отзывы приведены только для демонстрации структуры сайта.</p>
           </div>
 
           <div class="review-grid">
             <blockquote class="review-card">
-              <p>
-                «Привезла велосипед после зимы, тормоза почти не работали. Мастер всё настроил за
-                день, объяснил, что было не так. Очень спокойно и понятно.»
-              </p>
+              <p>«Привезла велосипед после зимы, тормоза почти не работали. Всё настроили за день и спокойно объяснили, что было не так.»</p>
               <footer>Клиент 1</footer>
             </blockquote>
 
             <blockquote class="review-card">
-              <p>
-                «Менял покрышку на электросамокате. До этого в двух местах отказались брать. Здесь
-                сделали нормально, цена была как заранее сказали.»
-              </p>
+              <p>«Менял покрышку на электросамокате. До этого в двух местах отказались брать. Здесь сделали нормально, цена была как заранее сказали.»</p>
               <footer>Клиент 2</footer>
             </blockquote>
 
             <blockquote class="review-card">
-              <p>
-                «Собрали новый велосипед из коробки, настроили переключатели и тормоза. Сам бы я
-                точно дольше мучился.»
-              </p>
+              <p>«Собрали новый велосипед из коробки, настроили переключатели и тормоза. Сам бы я точно дольше мучился.»</p>
               <footer>Клиент 3</footer>
             </blockquote>
           </div>
@@ -275,25 +344,21 @@
           <div class="contact-panel">
             <div class="contact-copy">
               <p class="eyebrow">Контакты</p>
-              <h2>Если удобно, напишите сразу в мессенджер</h2>
+              <h2>Если удобно, сначала просто напишите и опишите проблему</h2>
               <ul class="contact-list">
-                <li><span>Адрес</span><strong>Санкт-Петербург, демонстрационный адрес</strong></li>
-                <li><span>Примечание</span><strong>Адрес указан для демонстрации</strong></li>
-                <li><span>Телефон</span><a href="tel:+70000000000">+7 000 000-00-00</a></li>
-                <li><span>Telegram</span><a href="https://t.me/koleso_tok_demo" target="_blank" rel="noreferrer">@koleso_tok_demo</a></li>
-                <li><span>WhatsApp</span><a href="https://wa.me/70000000000" target="_blank" rel="noreferrer">+7 000 000-00-00</a></li>
+                <li><span>Адрес</span><strong>Санкт-Петербург, демонстрационный адрес рядом с метро</strong></li>
+                <li><span>Примечание</span><strong>Адрес указан только для учебной демонстрации</strong></li>
+                <li><span>Телефон</span><strong>+7 000 000-00-00</strong></li>
+                <li><span>Telegram</span><strong>@demo_koleso_tok</strong></li>
+                <li><span>WhatsApp</span><strong>+7 000 000-00-00</strong></li>
                 <li><span>Время работы</span><strong>ежедневно с 11:00 до 20:00</strong></li>
               </ul>
             </div>
 
             <div class="contact-actions">
-              <a class="button button-primary" href="https://t.me/koleso_tok_demo" target="_blank" rel="noreferrer">
-                Написать в Telegram
-              </a>
-              <a class="button button-secondary" href="https://wa.me/70000000000" target="_blank" rel="noreferrer">
-                Написать в WhatsApp
-              </a>
-              <a class="button button-ghost" href="tel:+70000000000">Позвонить</a>
+              <a class="button button-primary" href="#top">Вернуться к началу</a>
+              <a class="button button-secondary" href="#ask-first">Сначала задать вопрос</a>
+              <p class="contact-demo-note">Контакты на этой странице демонстрационные. Внешние ссылки на мессенджеры намеренно не используются.</p>
             </div>
           </div>
         </div>
@@ -303,7 +368,7 @@
     <footer class="site-footer">
       <div class="container footer-row">
         <p>Колесо &amp; Ток — учебный проект</p>
-        <p>Учебный проект. Все данные, цены, отзывы и контакты указаны только для демонстрации и не относятся к реальной компании.</p>
+        <p>Учебный демонстрационный проект. Все данные, цены, отзывы и контакты указаны только для демонстрации и не относятся к реальной компании.</p>
       </div>
     </footer>
 
